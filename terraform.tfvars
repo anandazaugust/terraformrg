@@ -27,6 +27,19 @@ resource_groups = {
       ManagedBy   = "Terraform"
     }
   }
+
+  # Third Resource Group
+  rg3 = {
+    name     = "staging-resource-group"
+    location = "centralus"
+    environment = "staging"
+    tags = {
+      Owner       = "QA Team"
+      Environment = "Staging"
+      CreatedDate = "2025-12-20"
+      ManagedBy   = "Terraform"
+    }
+  }
 }
 
 # Common settings
